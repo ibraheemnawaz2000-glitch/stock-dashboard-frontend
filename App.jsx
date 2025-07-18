@@ -31,7 +31,7 @@ function App() {
               <td>{s.date}</td>
               <td>{s.reason}</td>
               <td>
-                <a href={`https://your-backend-name.onrender.com/${s.chart_url}`} target="_blank" rel="noreferrer">
+                <a href={`https://stock-dashboard-backend-2ro9.onrender.com/${s.chart_url}`} target="_blank" rel="noreferrer">
                   View Chart
                 </a>
               </td>
