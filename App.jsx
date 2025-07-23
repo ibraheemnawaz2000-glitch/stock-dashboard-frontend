@@ -5,7 +5,7 @@ function App() {
   const [signals, setSignals] = useState([])
 
   useEffect(() => {
-    axios.get('https://your-backend-name.onrender.com/signals')
+    axios.get('https://stock-dashboard-backend-m4al.onrender.com/signals')
       .then(res => setSignals(res.data))
       .catch(err => console.error('Error fetching signals:', err))
   }, [])
@@ -31,7 +31,7 @@ function App() {
               <td>{s.date}</td>
               <td>{s.reason}</td>
               <td>
-                <a href={`https://stock-dashboard-backend-2ro9.onrender.com/${s.chart_url}`} target="_blank" rel="noreferrer">
+                <a href={`https://stock-dashboard-backend-m4al.onrender.com/${s.chart_url}`} target="_blank" rel="noreferrer">
                   View Chart
                 </a>
               </td>
@@ -44,4 +44,3 @@ function App() {
 }
 
 export default App
-// Trigger rebuild
